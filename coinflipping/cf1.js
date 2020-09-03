@@ -17,7 +17,6 @@ function coinToss(numTimes) {
   document.write("<br>" + "total of heads: " + heads + "<br>");
   document.write("total of tails " + tails);
 }
-// Now, call the function and tell it how many times to loop
 coinToss(10);
 // let tails = 0;
 // let heads = 0;
