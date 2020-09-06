@@ -14,7 +14,7 @@ function last(s) {
 last(s);
 
 function middle(s) {
-  console.log('this is the middle letter in my string: ' + s[s.length - 1]);
-  document.write('this is the middle letter in my string: ' + s[s.length - 1] + '<br>');
+  console.log('this is the middle letter in my string: ' + s.substring(1, 33));
+  document.write('this is the middle letter in my string: ' + s.substring(1, 33) + '<br>');
 }
 middle(s);
