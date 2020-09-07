@@ -1,5 +1,5 @@
 'use strict'
-const s = 'Supercalifragilisticexpialidocious';
+const s = prompt('Tilføj det ord du vil finde første, sidste og midten af');
 
 function first(s) {
   console.log('this is the first letter in my string: ' + s.charAt(0));
@@ -14,7 +14,7 @@ function last(s) {
 last(s);
 
 function middle(s) {
-  console.log('this is the middle letter in my string: ' + s.substring(1, 33));
-  document.write('this is the middle letter in my string: ' + s.substring(1, 33) + '<br>');
+  console.log('this is the middle letters in my string: ' + s.substring(1, s.length - 1));
+  document.write('this is the middle letters in my string: ' + s.substring(1, s.length - 1) + '<br>');
 }
 middle(s);
