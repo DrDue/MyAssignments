@@ -1,20 +1,24 @@
 'use strict'
-const s = prompt('Tilføj det ord du vil finde første, sidste og midten af');
+const s = prompt( 'Tilføj det ord du vil finde første, sidste og midten af' );
 
-function first(s) {
-  console.log('this is the first letter in my string: ' + s.charAt(0));
-  document.write('this is the first letter in my string: ' + s.charAt(0) + '<br>');
+function first( s ) {
+  return s.charAt( 0 );
 }
-first(s);
 
-function last(s) {
-  console.log('this is the last letter in my string: ' + s[s.length - 1]);
-  document.write('this is the last letter in my string: ' + s[s.length - 1] + '<br>');
+function last( s ) {
+  return s[ s.length - 1 ];
 }
-last(s);
 
-function middle(s) {
-  console.log('this is the middle letters in my string: ' + s.substring(1, s.length - 1));
-  document.write('this is the middle letters in my string: ' + s.substring(1, s.length - 1) + '<br>');
+function middle( s ) {
+  return s.substring( 1, s.length - 1 );
 }
-middle(s);
+
+function isPalindrome( palindrome ) {
+  if ( palindrome.length <= 1 )
+    return true;
+  if ( first( palindrome ) === last( palindrome ) &&
+    isPalindrome( middle( palindrome ) )
+
+    return true;
+    return false;
+  }
