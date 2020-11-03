@@ -1,7 +1,7 @@
 'use strict';
 document.write('Truth table for Conjunction' + '<br>');
 document.write('var1\tvar2\tvar1 && var2' + '<br>');
-console.log('Truth table for Conjunction');
+console.log('Truth tab le for Conjunction');
 console.log('var1\tvar2\tvar1 && var2');
 var var1 = true;
 var var2 = true;
